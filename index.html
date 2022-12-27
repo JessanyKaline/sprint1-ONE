@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1ef697816d.js" crossorigin="anonymous"></script>
+    <title>Criptografe</title>
+  </head>
+  <header>
+    <img class='logo' src="./img/Vector.png" alt="logo" />
+  </header>
+  <body>
+    <main>
+      <section>
+       
+          <textarea id="mensagem-input" rows="10" cols="33" wrap="hard" placeholder="Digite seu texto aqui..."></textarea>
+      
+        <div class="informativo">
+          <img src="./img/exclamacao.png" alt="Ponto de exclação com fundo cinza">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="area-botoes">
+          <button onclick="trocarLetras()" class="botoes" id="botao-criptografar">Criptografar</button>
+          <button onclick="mensagemCodificada()" class="botoes" id="botao-descriptografar">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="saida">
+        <div id="saida-dom">
+        <img
+          class="container-img"
+          src="./img/img.svg"
+          alt="Imagem de um desenho de menino com lupa olhando um diamante"
+        />
+        <div class="saida-msg">
+        <p class="saida-paragrafo">Nenhuma mensagem <br>encontrada</p>
+        <p class="saida-paragrafo2">Digite um texto que você deseja criptografar ou descriptografar</p>
+      </div>
+    </div>
+      </section>
+      <footer>
+        Desenvolvido por Jessany Kaline - Primeira Sprint/Challenge do curso da ONE. 
+        <div>
+       <a href="https://github.com/JessanyKaline"><i class="fa-brands fa-github fa-x1"></i></a> 
+        <a href="https://www.linkedin.com/in/jessany-kaline/"><i class="fa-brands fa-linkedin fa-x1"></i></a>
+        </div>
+      </footer>
+    </main>
+
+   <script src="script.js"></script>
+  </body>
+</html>
