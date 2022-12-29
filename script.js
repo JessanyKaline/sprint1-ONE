@@ -1,6 +1,8 @@
-let mensagem = document.getElementById("mensagem-input");
-let outputMensagem = document.getElementById("saida-dom");
-let inputMensagem = document.getElementById("mensagem-input");
+const mensagem = document.getElementById("mensagem-input");
+const outputMensagem = document.getElementById("saida-dom");
+
+
+
 
 function trocarLetras() {
   let texto = mensagem.value;
@@ -32,8 +34,16 @@ function mensagemCodificada() {
 
   outputMensagem.innerHTML =
     '<textarea class="outputMensagem">' +
-    resultadoTextoDecodificado +
+    resultadoTexto +
     "</textarea>";
 
   inputMensagem.value = "";
 }
+
+function copy() {
+  let botaoCopiar = document.getElementsByClassName("outputMensagem");
+  botaoCopiar.select();
+  document.execCommand("copy");
+}
+
+document.querySelector("#botaoCopiar").addEventListener("click", copy);
