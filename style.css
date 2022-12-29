@@ -256,3 +256,26 @@ i:hover{
     color: #495057;
       
 }
+
+.botao-copiar{
+  
+box-sizing: border-box;
+padding: 24px;
+gap: 8px;
+position: absolute;
+width: 328px;
+height: 67px;
+left: 22px;
+top: 220px;
+border: 1px solid #0A3871;
+border-radius: 24px;    
+cursor: pointer;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+text-align: center;
+color: #0A3871;
+
+}

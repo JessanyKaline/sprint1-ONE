@@ -6,33 +6,34 @@ function trocarLetras() {
   let texto = mensagem.value;
 
   let resultadoTexto = texto
-    .replace(/a/g, "ai")
-    .replace(/e/g, "enter")
-    .replace(/i/g, "imes")
-    .replace(/o/g, "ober")
-    .replace(/u/g, "ufat");
 
-    outputMensagem.innerHTML = '<textarea class="outputMensagem">' +resultadoTexto+ '</textarea>'
-    
-    inputMensagem.value="";
+    .replaceAll("e", "enter")
+    .replaceAll("i", "imes")
+    .replaceAll("a", "ai")
+    .replaceAll("o", "ober")
+    .replaceAll("u", "ufat");
+
+  outputMensagem.innerHTML =
+    '<textarea class="outputMensagem">' + resultadoTexto + "</textarea>";
+
+  inputMensagem.value = "";
 }
 
+function mensagemCodificada() {
+  let textoDecodificado = mensagem.value;
 
-function mensagemCodificada(){
-    let textoDecodificado = mensagem.value;
+  let resultadoTextoDecodificado = textoDecodificado
 
-    let resultadoTextoDecodificado = textoDecodificado
-    .replace(/ai/g, "a")
-    .replace(/enter/g, "e")
-    .replace(/imes/g, "i")
-    .replace(/ober/g, "o")
-    .replace(/ufat/g, "u");
+    .replaceAll("enter", "e")
+    .replaceAll("imes", "i")
+    .replaceAll("ai", "a")
+    .replaceAll("ober", "o")
+    .replaceAll("ufat", "u");
 
-    outputMensagem.innerHTML = '<textarea class="outputMensagem">' +resultadoTextoDecodificado+ '</textarea>'
-   
-    inputMensagem.value="";
+  outputMensagem.innerHTML =
+    '<textarea class="outputMensagem">' +
+    resultadoTextoDecodificado +
+    "</textarea>";
 
-   
-    
+  inputMensagem.value = "";
 }
-
