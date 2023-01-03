@@ -40,10 +40,10 @@ function mensagemCodificada() {
   inputMensagem.value = "";
 }
 
-function copy() {
-  let botaoCopiar = document.getElementsByClassName("outputMensagem");
-  botaoCopiar.select();
-  document.execCommand("copy");
-}
+const btnCopiar = document.getElementById('botao-copiar');
 
-document.querySelector("#botaoCopiar").addEventListener("click", copy);
+btnCopiar.addEventListener('click', function(e){
+  const textoCopiado = document.querySelector('.outputMensagem');
+  textoCopiado.select();
+  document.execCommand('copy');
+})
