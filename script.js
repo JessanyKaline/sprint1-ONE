@@ -1,7 +1,6 @@
 const mensagem = document.getElementById("mensagem-input");
 const outputMensagem = document.getElementById("saida-dom");
-
-
+const btnCopiar = document.getElementById("botao-copiar");
 
 
 function trocarLetras() {
@@ -16,7 +15,10 @@ function trocarLetras() {
     .replaceAll("u", "ufat");
 
   outputMensagem.innerHTML =
-    '<textarea class="outputMensagem">' + resultadoTexto + "</textarea>";
+    '<textarea class="outputMensagem">' +
+    resultadoTexto +
+    "</textarea>" +
+    '<button id="botao-copiar" onclick="copiar()">Copiar</button>';
 
   inputMensagem.value = "";
 }
@@ -34,16 +36,15 @@ function mensagemCodificada() {
 
   outputMensagem.innerHTML =
     '<textarea class="outputMensagem">' +
-    resultadoTexto +
-    "</textarea>";
+    resultadoTextoDecodificado +
+    "</textarea>" +
+    '<button id="botao-copiar" onclick="copiar()">Copiar</button>';;
 
   inputMensagem.value = "";
 }
 
-const btnCopiar = document.getElementById('botao-copiar');
-
-btnCopiar.addEventListener('click', function(e){
-  const textoCopiado = document.querySelector('.outputMensagem');
-  textoCopiado.select();
-  document.execCommand('copy');
-})
+function copiar (){
+  let textoCopiado = document.querySelector(".outputMensagem");
+  navigator.clipboard.writeText(textoCopiado.value);
+  alert("Mensagem copiada com sucesso!");
+};
