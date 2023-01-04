@@ -1,0 +1,127 @@
+@media (min-width: 320px) and (max-width: 800px) {
+  header {
+    position: absolute;
+    width: 50vh;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+  }
+
+  textarea {
+    position: absolute;
+    width: 50vh;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+
+    color: #0a3871;
+  }
+
+  .informativo {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #343a40;
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 455px;
+  }
+
+  .area-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 50vh;
+    height: 158px;
+    left: 16px;
+    top: 485px;
+  }
+
+
+
+  .saida {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 270px;
+    height: 186px;
+    left: 16px;
+    top: 707px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+
+
+  .container-img {
+    display: none;
+  }
+
+  .saida-msg {
+    display: none;
+  }
+
+  .outputMensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 270px;
+    height: 186px;
+    left: 16px;
+    top: 0px;
+  
+   
+    border-radius: 32px;
+  }
+
+  #botao-copiar{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 231px;
+    height: 19px;
+    top: 190px;
+    left: 60px;
+    
+
+  }
+
+  footer {
+    position: absolute;
+    top: 1000px;
+    width: 80%;
+    left: 16px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #343a40;
+  }
+}
